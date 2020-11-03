@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+body {
+    background: rgb(88,164,238);
+    background: radial-gradient(circle, rgba(88,164,238,1) 0%, rgba(43,141,214,1) 53%, rgba(0,118,190,1) 100%);
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.turners-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.turners-link a {
+    text-decoration: none;
+    color: #eee;
+    border-bottom: 3px solid #b71234;
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: #eee;
+    margin: 0;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 400;
+    margin: 0;
+    margin: 0 0 30px;
+}
+
+#fileToUpload {
+    font-family: 'Roboto', sans-serif;
+}
+
+#opResult {
+    margin: 30px 0;
+    height: 31px;
+    text-align: center;
+}
+
+#opResult a {
+    text-decoration: none;
+    color: #eee;
+    font-size: 20px;
+    border-bottom: 3px solid #b71234;
+    padding: 5px;
+}

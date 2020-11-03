@@ -1,0 +1,32 @@
+<!--
+Copyright 2018 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+PDX-License-Identifier: MIT-0 (For details, see https://github.com/awsdocs/amazon-rekognition-developer-guide/blob/master/LICENSE-SAMPLECODE.)
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="aws-cognito-sdk.min.js"></script>
+  <script src="amazon-cognito-identity.min.js"></script>
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.16.0.min.js"></script>
+  <script src="./app.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Carfinder</title>
+</head>
+
+<body>
+  <div class="turners-link">
+    <a target="_blank" href="https://www.turners.co.nz/">
+      Go to Turners Auctions 🡒
+    </a>
+  </div>
+
+  <H1>
+    🚗<br />
+    Carfinder</H1>
+  <h3>Upload a .png or .jpeg of a car you like </h3>
+  <input type="file" name="fileToUpload" id="fileToUpload" accept="image/*">
+  <p id="opResult"></p>
+</body>
+<script src='carfinder.js'></script>
+</html>
