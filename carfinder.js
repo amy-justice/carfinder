@@ -36,18 +36,17 @@ document.getElementById("fileToUpload").addEventListener("change", function (eve
           console.log(err, err.stack); // an error occurred
       } else {
         results = [];
-        console.log(response)
+        // console.log(response)
         // console.log(`Detected labels for: ${photo}`)
         response.Labels.forEach(label => {
           if (turnersBodyTypes.includes(label.Name)) {
             results.push(label.Name);
-            console.log(`Label:      ${label.Name}`)
-            console.log(`Confidence: ${label.Confidence}`)
-            console.log("------------")
-            console.log("")
+            // console.log(`Label:      ${label.Name}`)
+            // console.log(`Confidence: ${label.Confidence}`)
+            // console.log("------------")
+            // console.log("")
           };
           topResult = results[0];
-          console.log(topResult);
           turnersSearch(topResult);
           return topResult;
         })
@@ -76,7 +75,7 @@ document.getElementById("fileToUpload").addEventListener("change", function (eve
     } else {
       document.getElementById("opResult").innerHTML = `
         <a target="_blank" href='https://www.turners.co.nz/Cars/Used-Cars-for-Sale/?types=${topResult}&pageno=1&sortorder=7&pagesize=24'>
-          Click to search for ${topRewsult}s on Turners Auctions
+          Click to search for ${topResult}s on Turners Auctions
         </a>
       `;
     }

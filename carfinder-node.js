@@ -10,6 +10,7 @@ var async = require("async");
 
 const bucket = 'amyj-mrhq' // the bucketname without s3://
 const photo  = '2020-lamborghini-huracan-evo-Autocar-6.jpg' // the name of file
+
 const turnersBodyTypes = ['Convertible', 'Wagon', 'Utility', 'Coupe', 'Hatchback', 'Van', 'Sedan', 'SUV', 'Suv', 'Pickup Truck'];
 let results = [];
 
